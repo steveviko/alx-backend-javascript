@@ -54,10 +54,10 @@ function executeWork(employee: Director | Teacher): string {
 console.log(executeWork(createEmployee('Sam', 'Ali', 200)));
 console.log(executeWork(createEmployee('Hena', 'Free', 1000)));
 
-type Subjects = 'Math' | 'English';
+type Subjects = 'Math' | 'History';
 function teachClass(todayClass: Subjects): string{
-  return todayClass === 'Math' ? 'Teaching Math' : 'Teaching English';
+  return todayClass === 'Math' ? 'Teaching Math' : 'Teaching History';
 }
 
 console.log(teachClass('Math'));
-console.log(teachClass('English'));
+console.log(teachClass('History'));
